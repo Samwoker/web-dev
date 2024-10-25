@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+  <h1>Your Shopping Cart</h1>
+
+  <div class="cart-details">
+    <ul>
+      <li class="cart-items">
+        <img src="https://via.placeholder.com/150" alt="Product Image" id="image">
+        <div class="product-detail">
+          <h2 id="product-name"></h2>
+          <p class="price"></p>
+          <p class="quantity"></p>
+          <p  class="total"></p>
+        </div>
+        <div class="btn">
+          <button class="remove-btn">Remove</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<div class="cart-summary">
+  <h2 id="cart-total">Cart Totals</h2>
+  <p id="Subtotal"></p>
+  <p id="tax"></p>
+  <p id="Total"></p>
+</div>
+<button class="checkout">Check Out</button>
+
+<script src="../scripts/cart.js"></script>
+</body>
+</html>

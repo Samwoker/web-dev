@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #1e2761;
+  padding: 1rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav-logo-img {
+  width: 100px;
+  border-radius: 15px;
+  height: auto;
+  max-width: 100%;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.nav-item {
+  margin-left: 20px;
+}
+.nav-link {
+  color: #408ec6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 10px 0;
+}
+.nav-link:hover {
+  color: #3268d5;
+}
+#cart-icon {
+  fill: #ffffff; /* Change this to whatever color you want */
+  width: 12px; /* Icon width */
+  height: px; /* Icon height */
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer; /* Change cursor to pointer */
+  margin-right: auto;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white; /* Color of the hamburger icon */
+  margin: 4px 0; /* Spacing between bars */
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show on small screens */
+  }
+
+  .nav-list {
+    flex-direction: column; /* Stack nav items */
+    display: none; /* Hide by default */
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-images {
+  width: 300px;
+  border-radius: 20px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-image {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.card-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1e2761;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.add-to-cart {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #7a2048;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.add-to-cart:hover {
+  background-color: #581c36;
+}
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+  <body>
+    <h1>CheckOut</h1>
+    <div class="container">
+      <div class="product-detail">
+      <ul>
+        <li>
+          <img src="" alt="Product Image" id="imageSrc" />
+            <div>
+              <h2 id="product-name"></h2>
+              <p id="price"></p>
+              <p id="quantity"></p>
+              <p id="total"></p>
+            </div>
+            <div class="btn">
+              <button class="update">Update Quantity</button>
+              <button class="remove">Remove</button>
+            </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+    <h2>Client Information</h2>
+    <div class="client-info">
+      <form id="client-form">
+        <input type="text" id="name" placeholder="Full Name" required /><br />
+        <input type="email" id="email" placeholder="Email" required /><br />
+        <input type="text" id="address" placeholder="Address" required /><br />
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Phone Number"
+          required
+        /><br />
+        <button type="submit" id="submit-btn">submit</button>
+      </form>
+    </div>
+    <script src="../scripts/checkout.js"></script>
+  </body>
+</html>
